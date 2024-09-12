@@ -1,0 +1,31 @@
+div {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    border: 5px solid orangered;
+    margin: 10px;
+}
+
+.quadro1 {
+    background-color: green;
+}
+
+.quadro2 {
+    background-color: powderblue;
+    width: 150px;
+}
+
+.quadro3 {
+    background-color: sandybrown;
+    border-radius: 150px;
+}
+
+.quadro4 {
+    background-color: black;
+
+}
+
+img {
+    width:100px; 
+    height:100px;
+}

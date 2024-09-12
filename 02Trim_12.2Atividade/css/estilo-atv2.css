@@ -1,0 +1,60 @@
+div {
+    width: 150px;
+    height: 110px;
+    display: flex;
+    align-self: center;
+}
+
+p {
+    color: white;
+}
+
+.faixaCima {
+    background-color: rgb(233, 94, 44);
+    width: 100%;
+    height: 200px;
+}
+
+.faixaCentro {
+    background-color: rgb(141, 44, 141);
+    width: 100%;
+    height: 200px;
+}
+
+.faixaBaixo {
+    background-color: rgb(54, 122, 54);
+    width: 100%;
+    height: 200px;
+}
+
+.esquerda-cima {
+    background-color: rgb(141, 44, 141);
+    position: absolute;
+    left: 50px;
+}
+.esquerda-centro {
+    background-color: rgb(54, 122, 54);
+    position: absolute;
+    left: 50px;
+}
+.esquerda-baixo {
+    background-color: rgb(233, 94, 44);
+    position: absolute;
+    left: 50px;
+}
+
+.direita-cima {
+    background-color: rgb(54, 122, 54);
+    position: absolute;
+    right: 50px;
+}
+.direita-centro {
+    background-color: rgb(233, 94, 44);
+    position: absolute;
+    right: 50px;
+}
+.direita-baixo {
+    background-color: rgb(141, 44, 141);
+    position: absolute;
+    right: 50px;
+}

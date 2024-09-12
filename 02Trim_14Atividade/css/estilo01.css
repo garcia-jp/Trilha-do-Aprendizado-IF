@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #0b1726, #1f3f66);
+    width: 90%;
+    margin: 0 auto; /* Divide o contúdo de forma proporcional ao navegador */
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #261616;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+#logo img {
+    width: 45%;
+    padding-top: 25px;
+}
+
+.navegacao {
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.navegacao li{
+    list-style: none;
+}
+.navegacao a{
+    color: rgb(173, 173, 173);
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+}
+
+.navegacao a:hover{ /* faz alterações quando o mause está por cima do conteúdo */
+    color: #e32936;
+    background-color: black;
+}
+
+.principal { /* Permite que o conteúdo fique "flexivel" para manipulação ocupand uma linha e disposto em colunas*/
+    display: flex;
+    flex-direction: line;
+}
+
+.conteudo {
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+}
+
+.rodape {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.btnconteudo {
+    display: inline-block;
+    text-decoration: none;
+}
+.suspenso-conteudo {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.suspenso:hover .suspenso-conteudo {
+    display: block;
+}
+
+.aula {
+    margin: 15px 2px 20px 2px;
+    width: 100%;
+    padding: 15px;
+}
+.aula h4 {
+    margin: 0px;
+}
+.aula p {
+    display: inline;
+    padding-right: 10px;
+}
+.aula a {
+    text-decoration: none;
+    color: #261616;
+}
+.outros-link {
+    padding-left: 25px;
+}
+.demais {
+    margin: 0px 2px 25px 2px;
+    padding: 15px;
+}

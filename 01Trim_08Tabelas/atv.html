@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        .estilo1 table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        .estilo1 td, .estilo1 th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        .estilo1 tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Como fazer uma tabela?</h1>
+    <h2>Exemplo de uma tabela:</h2>
+    <table style="width: 400px;">
+        <tr>
+            <th>Nome</th>
+            <th>Lançamento</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>A ameaça fantasma</td>
+            <td>1999</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>O ataque dos clones</td>
+            <td>2002</td>
+            <td>4.1</td>
+        </tr>
+        <tr>
+            <td>A vingança dos Sith</td>
+            <td>2005</td>
+            <td>4.5</td>
+        </tr>
+        <caption>Tabela 1</caption>
+    </table>
+    <h2>Como iniciar uma tabela:</h2>
+    <p>A primeira coisa é colocar a tag <code>&#60;table&#62&#60;/table&#62</code>, para iniciar a tabela. </p>
+    <p>Para definir as linhas, coloca-se a tag <code>&#60;tr&#62&#60;/tr&#62</code>.</p>
+    <p>
+        Dentro de cada tag de linha, defini-se as tags para criar as colunas. <br>
+        Se aquela linha for de título, basta criar cada coluna como se fosse uma lista e usando a tag <code>&#60;th&#62&#60;/th&#62</code>. <br>
+        E se for de contúdo normal, usa-se <code>&#60;td&#62&#60;/td&#62</code>.
+    </p>
+    <h2>Um exemplo com código:</h2>
+    <p>A tabela 1, foi criada com esse código:</p>
+    <code>
+        &#60;table style="width: 400px;"&#62 <br>
+            <ul>
+                &#60;tr&#62 <br>
+                    <ul>
+                        &#60;th&#62Nome&#60;/th&#62 <br>
+                        &#60;th&#62Lançamento&#60;/th&#62 <br>
+                        &#60;th&#62Nota&#60;/th&#62 <br>
+                    </ul>
+                &#60;/tr&#62 <br>
+                &#60;tr&#62 <br>
+                    <ul>
+                        &#60;td&#62A ameaça fantasma&#60;/td&#62 <br>
+                        &#60;td&#62 1999 &#60;/td&#62 <br>
+                        &#60;td&#62 4.2 &#60;/td&#62 <br>
+                    </ul>
+                &#60;/tr&#62 <br>
+                &#60;tr&#62 <br>
+                    <ul>
+                        &#60;td&#62O ataque dos clones&#60;/td&#62 <br>
+                        &#60;td&#62 2002 &#60;/td&#62 <br>
+                        &#60;td&#62 4.1 &#60;/td&#62 <br>
+                    </ul>
+                &#60;/tr&#62 <br>
+                &#60;tr&#62 <br>
+                <ul>
+                    &#60;td&#62A vingança dos Sith&#60;/td&#62 <br>
+                    &#60;td&#62 2005 &#60;/td&#62 <br>
+                    &#60;td&#62 4.5 &#60;/td&#62 <br>
+                </ul>
+                &#60;/tr&#62 <br>
+            </ul>
+        &#60;/table&#62 <br>
+    </code>
+
+    <h2>Star Wars</h2>
+    <h2>Exemplo 02:</h2>
+    <table style="width: 300px;">
+        <tr>
+            <th>Nome</th>
+            <th>Lançamento</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td>Uma nova esperança</td>
+            <td>1977</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>O império contra-ataca</td>
+            <td>1980</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td>O retorno de Jedi</td>
+            <td>1983</td>
+            <td>4.7</td>
+        </tr>
+    </table>
+    
+    <h2>Exemplo 03:</h2>
+    <p>Para que a tabela tenha borda, adiciona-se <code>border=""</code> na tag <code>&#60;table&#62</code>.</p>
+    <table style="width: 350px;" border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Lançamento</th>
+            <th>Nota</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.adorocinema.com/filmes/filme-215097/">O despertar da força</a></td>
+            <td>2015</td>
+            <td>4.6</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.adorocinema.com/filmes/filme-215099/criticas-adorocinema/">Os últimos Jedi</a></td>
+            <td>2017</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.omelete.com.br/filmes/criticas/star-wars-a-ascensao-skywalker">A ascensão de Skywalker</a></td>
+            <td>2019</td>
+            <td>4.0</td>
+        </tr>
+    </table>
+    
+    <h2>Exemplo 04: </h2>
+    <table style="width: 400px;">
+        <tr>
+            <th>Imagem</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td><a href="https://pt.wikipedia.org/wiki/Darth_Vader"><img src="/img/darthVader.jpg" width="80%"></a></td>
+            <td>Darth Vader</td>
+        </tr>
+        <tr>
+            <td><a href="https://starwars.fandom.com/pt/wiki/Anakin_Skywalker"><img src="/img/anakin.webp" width="80%"></a></td>
+            <td>Anakin Skywalker</td>
+        </tr>
+        <tr>
+            <td><a href="https://starwars.fandom.com/pt/wiki/Ahsoka_Tano"><img src="/img/ashoka.webp" width="80%"></a></td>
+            <td>Ashoka Tano</td>
+        </tr>
+    </table>
+
+    <h2>Exemplo 05: </h2>
+    <h4>Melhores personagens, segundo eu mesmo:</h4>
+    <table style="width: 400px;" class="estilo1">
+        <tr>
+            <th>Posição</th>
+            <th>Personagem</th>
+            <th>Introduzido</th>
+        </tr>
+        <tr>
+            <td>1º</td>
+            <td>Ahsoka Tano</td>
+            <td>The clone Wars</td>
+        </tr>
+        <tr>
+            <td>2º</td>
+            <td>Obi-Wan Kenobi</td>
+            <td>Uma nova esperança</td>
+        </tr>
+        <tr>
+            <td>3º</td>
+            <td>Omega</td>
+            <td>The Bad Batch</td>
+        </tr>
+    </table>
+
+    <h2>Terra média</h2>
+    <table style="width: 400px;" border="1">
+        <tr>
+            <th colspan="2">Personagens</th>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>Olórion (Gandalf)</td>
+            <td><a href="https://lotr.fandom.com/wiki/Gandalf"><img src="/img/gandalf.jpg" width="300"></a></td>
+        </tr>
+        <tr>
+            <td>Bilbo Bolseiro</td>
+            <td><img src="/img/bilbo.jpg" width="300"></td>
+        </tr>
+    </table>
+</body>
+</html>
